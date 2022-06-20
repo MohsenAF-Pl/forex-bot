@@ -1,0 +1,12 @@
+the pages which are needed are saved in the firefox
+
+api key: 388d8d5440ad979dd6e1745b1f566bde-a5dea5109879fe5f64d0c8b871ab59e8
+account:  101-001-22518407-001
+
+
+in this page there is good instructions to use the api: http://developer.oanda.com/rest-live-v20/instrument-ep/
+
+we better save our data as for example pickle so we can use them later
+this ohlc on mid and bid and ask is too much and we better do it on one of these
+
+

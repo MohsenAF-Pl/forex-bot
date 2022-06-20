@@ -1,0 +1,3 @@
+we made a file defs.py for saving the info we need so we can use it every where
+
+
