@@ -8,5 +8,8 @@ in this page there is good instructions to use the api: http://developer.oanda.c
 
 we better save our data as for example pickle so we can use them later
 this ohlc on mid and bid and ask is too much and we better do it on one of these
+the url for getting the intruments is differnet from the previous one and needs no params
 
+in the 10th video we use the test.ipynb file to get the historical data from the api for forex and save it.. of course this is also a test and the main task is done by save_candles.ipynb and it comes in the below paragraph
 
+we use the save_candles.ipynb to get the real historical data 
