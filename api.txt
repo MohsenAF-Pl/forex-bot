@@ -13,3 +13,15 @@ the url for getting the intruments is differnet from the previous one and needs 
 in the 10th video we use the test.ipynb file to get the historical data from the api for forex and save it.. of course this is also a test and the main task is done by save_candles.ipynb and it comes in the below paragraph
 
 we use the save_candles.ipynb to get the real historical data 
+
+if we use the vars() for an instance of a class it returns the variables of that instance:/
+def __repr__(self):
+	return str(vars(self))
+this function inside a class return all the variables when we call an instance
+using @classmethod we can create functions which are not dependent to the instane and ther are related to the class AND in this function instead of "self" we use "cls".. idk y but it is what it is
+*************************************
+
+we need to convert the type of some data from data frame that comes from pandas so they become numeric data and we can use them and it is done in the video 15
+*************************************
+
+video 16 we use plotly to plot the data and we do it in the candle_plot.ipynb file
