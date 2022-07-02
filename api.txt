@@ -25,3 +25,23 @@ we need to convert the type of some data from data frame that comes from pandas 
 *************************************
 
 video 16 we use plotly to plot the data and we do it in the candle_plot.ipynb file
+*************************************
+
+ in the #23 video we analyse the MA cross overs on multiple pairs
+ *****************************************************************
+ 
+ KEEP THE NOTES AND DON'T SKIP THEM
+ NOT HAVING A BRIEF NOTE MAKES YOU MORE CONFUSED AND MORE AND MORE
+ DON'T GET TOO LAZY AND KEEP TRACK OF THINGS
+ *****************************************************************
+ 
+ #30
+ extracting more data, much more apparently
+ ************************************
+ 
+ #31
+ new file => collect_hist_data.py 
+ ************************************
+ 
+ #33 is about to begin and haven't seen any of it
+ 

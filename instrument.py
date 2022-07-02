@@ -39,8 +39,24 @@ class Instrument():
         else:
             return None
 
+        
+    @classmethod
+    def get_pairs_from_string(cls, pair_str):
+        # gets the available pairs to trade from the instrument.py 
+        existing_pairs = cls.get_instruments_dict().keys()
+
+        pairs = pair_str.split(',')
+
+        # ['GBP', ' ERU', ' USD', ' CAD', ' JPY', ' NZD', ' CHF']
+        pair_list = []
+        for p1 in pairs:
+            for p2 in pairs:
+                pair = f"{p1}_{p2}"
+                if pair in existing_pairs:
+                    pair_list.append(pair)
+        
+        return pair_list
+
 
 if __name__ == "__main__":
-    # for k,v in Instrument.get_instruments_dict().items():
-    #     print(k,v)
-    print(Instrument.get_instrument_by_name("EUR_USD"))
+    print(Instrument.get_pairs_from_string("GBP,EUR,USD,CAD,JPY,NZD,CHF"))
