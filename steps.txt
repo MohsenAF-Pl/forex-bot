@@ -1,0 +1,7 @@
+actually you can run b_saveCandles to get latest data
+
+if you want to do this project for tehran market you need to do it from a to whatever it goes to
+and you need to use "D1" obviously for granularity and rewrite the a_instrument
+
+
+middle of the #28
