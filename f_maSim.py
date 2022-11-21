@@ -73,6 +73,8 @@ def store_trades(results):
     all_trades_df = pd.concat(all_trades_df_list)
     all_trades_df.to_pickle('./data/all_trades.pkl')
 
+    return all_trades_df
+
 def process_results(results):
     results_list = [r.result_obj() for r in results]
     final_df = pd.DataFrame.from_dict(results_list)
@@ -80,7 +82,7 @@ def process_results(results):
     final_df.to_pickle('./data/ma_test_result.pkl')
     print(final_df.shape, final_df.num_trades.sum())
 
-    create_excel(final_df)
+    return final_df
 
 
 def get_test_pairs(pair_str):
@@ -119,8 +121,9 @@ def run():
                     continue
                 results.append(eavaluate_pair(i_pair, _mashort, _malong, price_data))
 
-    process_results(results)
-    store_trades(results)
+    final_df = process_results(results)
+    all_trades_df = store_trades(results)
+    create_excel(final_df, all_trades_df)
 
 
 if __name__ == '__main__':
